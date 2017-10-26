@@ -1,0 +1,159 @@
+<html style="height:auto;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style type="text/css">/* This file contains all the css contents for the read iframe */
+    html, body {
+        font: 14px/1.666 Tahoma, Arial;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: #000000;
+        scrollbar-base-color: #dddddd;
+        scrollbar-3dlight-color: #ffffff;
+        scrollbar-highlight-color: #dddddd;
+        scrollbar-shadow-color: #ffffff;
+        scrollbar-darkshadow-color: #ffffff;
+        scrollbar-track-color: #ffffff;
+        scrollbar-arrow-color: #999999;
+        word-break: break-word;
+    }
+
+    div, form, input, textarea, span, img, iframe {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+
+    input {
+        cursor: pointer;
+    }
+
+    blockquote {
+        margin-left: 30px;
+        margin-right: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    blockquote blockquote {
+        margin-left: 0px;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+    }</style>
+</head>
+<body onload="window.parent.processIframeOnload_sqm_2480();"
+      style="height:auto;padding:0;margin:0;border:0">
+<div style="clear:both;">
+    <div style="margin:.0px;padding:.0px;border:.0px;outline:.0px;color:#000000;font-family:Tahoma,Arial;font-size:14.0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:normal;text-align:start;text-indent:.0px;text-transform:none;widows:2;">
+        <div class="aym_table_wrap"
+             style="display: table; margin: 0px;">
+            <table cellpadding="0" class="MsoTableGrid"
+                   style="border-collapse:separate;border-spacing:0px;border:1.0px solid #666666;" _ow="1200px">
+                <tbody>
+                <tr>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">模块</span></b><b></b>
+                    </p></td>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">${OLD_VERSION}</span></b><b></b>
+                    </p></td>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">${NEW_VERSION}</span></b><b></b>
+                    </p></td>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">未混淆新增</span></b><b></b>
+                    </p></td>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">已混淆删除</span></b><b></b>
+                    </p></td>
+                    <td bgcolor="#E5E5E5" width="260" height="80" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        <b><span
+                                style="margin:.0px;padding:.0px;border:.0px;outline:.0px;font-size:13.0px;font-family:宋体;color:#333333;">变化</span></b><b></b>
+                    </p></td>
+                </tr>
+                #foreach($MAIN_DIFF_ITEM in ${MAIN_TABLE_LIST})
+                <tr>
+                    <td width="260" height="40" style="border:1.0px solid #666666;padding:.0px 5.4pt;"><p class="MsoNormal"
+                                                                                                          style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("MODULE")}
+                    </p></td>
+                    <td width="100" height="40"
+                        style="border-width:1.0px;border-style:solid;border-color:#666666;padding:.0px 5.4pt;"><p
+                            class="MsoNormal"
+                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("OLD_VERSION")}
+                    </p></td>
+                    <td width="100" height="40"
+                        style="border-width:1.0px;border-style:solid;border-color:#666666;padding:.0px 5.4pt;"><p
+                            class="MsoNormal"
+                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("NEW_VERSION")}
+                    </p></td>
+                    <td width="100" height="40"
+                        style="border-width:1.0px;border-style:solid;border-color:#666666;padding:.0px 5.4pt;"><p
+                            class="MsoNormal"
+                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("ADD")}
+                    </p></td>
+                    <td width="100" height="40"
+                        style="border-width:1.0px;border-style:solid;border-color:#666666;padding:.0px 5.4pt;"><p
+                            class="MsoNormal"
+                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("DELETE")}
+                    </p>
+                    </td>
+                    <td width="100" height="40"
+                        style="border-width:1.0px;border-style:solid;border-color:#666666;padding:.0px 5.4pt;"><p
+                            class="MsoNormal"
+                            style="margin:.0px;font-size:14.0px;font-family:Calibri,sans-serif;text-align:center;">
+                        ${MAIN_DIFF_ITEM.get("CHANGE")}
+                    </p></td>
+                </tr>
+                #end
+                </tbody>
+            </table>
+        </div>
+        <div>未混淆详情如下:</div>
+        <div style="margin: 0px auto; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font-family: Helvetica, arial, freesans, clean, sans-serif; font-size: 14px; line-height: 1.6; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);">
+            <ol style="margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 30px; border-width: 0px; border-style: initial; border-color: initial; margin-top: 0px !important; margin-bottom: 0px !important;">
+                #foreach($MAIN_DETAIL_ITEM in ${MAIN_DETAIL_LIST})
+                <li style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial;">
+                    <strong style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial;">${MAIN_DETAIL_ITEM.get("NAME")}</strong>
+                    <ul style="margin: 0px; padding: 0px 0px 0px 30px; border-width: 0px; border-style: initial; border-color: initial;">
+                        #foreach($MAIN_DETAIL_ROW_ITEM in ${MAIN_DETAIL_ITEM.get("DATA")})
+                        <li style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial;">
+                            ${MAIN_DETAIL_ROW_ITEM}
+                        </li>
+                        #end
+                        #if(${MAIN_DETAIL_ITEM.get("HAS_MORE")})
+                        <li style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial;">
+                            <b>... ...</b> <br/>
+                            有关该模块更多信息请查看附件<b>mapping_module_log.txt</b>
+                        </li>
+                        #end
+                    </ul>
+                </li>
+                #end
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+</html>

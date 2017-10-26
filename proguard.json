@@ -1,0 +1,27 @@
+{
+  "work_dir": ".",
+  "mapping": {
+    "root": "/mnt/sdb/www/html/apk/files",
+    "split": "_",
+    "tail": "_mapping.txt",
+    "key": "app"
+  },
+  "proguard": "app_module_main/proguard-project.txt",
+  "check_git": true,
+  "sources": [
+    {
+      "git_root": "app_module_common",
+      "code_dirs": [
+        "src",
+        "src/java/main"
+      ]
+    },
+    {
+      "git_root": "app_module_main",
+      "code_dirs": [
+        "src",
+        "src/java/main"
+      ]
+    }
+  ]
+}
